@@ -1,16 +1,17 @@
 *{
     margin: 0;
     padding: 0;
+    color: rgb(14, 14, 14);
 }
 body{
     width: 100%;
+    background-color: rgb(245, 245, 245);
 }
 .navbar-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-bottom: 2px solid rgba(61, 61, 61, 1);
+    background-color: #4ea5fc;
     backdrop-filter: blur(10px);
     padding: 0.5rem 2rem;
     top: 0;
@@ -46,27 +47,32 @@ body{
     font-size: 1.2rem;
 }
 .list ul li a{
-    color: rgb(175, 175, 175);
+    color: rgb(75, 75, 75);
     display: block;
     text-decoration: none;
     transition: ease-in-out 300ms;
 }
 .list ul li a:hover{
-    box-shadow: 0 2px rgb(175, 175, 175);
-    color: rgb(58, 58, 58);
-    text-shadow: 1px 3px 10px #58a3ff;
+    box-shadow: 0 2px rgb(225, 225, 225);
+    color: rgb(225, 225, 225);
+    text-shadow: 1px 3px 5px #ffffff;
 }
 #active{
-    color: black;
-    box-shadow: 0 2px black
+    color: rgb(14, 14, 14);
+    font-weight: bold;
+    box-shadow: 0 2px rgb(14, 14, 14);
+}
+#active:hover{
+    color: rgb(14, 14, 14);
+    text-shadow: 0 0 0;
 }
 .ppdb{
-    background-color: #58a3ff;
+    background-color: rgb(247, 236, 12);
     padding: 10px;
     border-radius: 5px;
 }
 .ppdb a{
-    color: black;
+    color: rgb(19, 19, 19);
     text-decoration: none;
     font-size: 1.2rem;
 }
@@ -77,15 +83,28 @@ p{
     position: relative;
     font-size: 4rem;
 }
-@media screen and (max-device-width: 480px) 
-    and (orientation: portrait) {
+@media screen and (max-device-width: 1024px){
     .hamburger-menu{
         display: flex;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         cursor: pointer;
     }
-    .list ul,
-    .ppdb{
+    .list{
         display: none;
+        align-items: flex-start;
+        width: 40%;
+        background-color: red;
+        height: 100dvh;
+        flex-direction: column;
+        position: absolute;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        top: 0;
+        right: 0;
+        z-index: 99999;
+    }
+    .list ul{
+        display: flex;
+        flex-direction: column;
     }
 }
