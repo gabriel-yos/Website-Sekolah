@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+}
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid rgba(61, 61, 61, 1);
+    backdrop-filter: blur(10px);
+    padding: 0.5rem 2rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    position: sticky;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.logo img{
+    width: 70px;
+    height: auto;
+}
+.list{
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+.list ul{
+    display: flex;
+    gap: 2rem;
+}
+.list li{
+    display: flex;
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+.list ul li a{
+    color: rgb(175, 175, 175);
+    display: block;
+    text-decoration: none;
+    transition: ease-in-out 300ms;
+}
+.list ul li a:hover{
+    box-shadow: 0 2px rgb(175, 175, 175);
+    color: rgb(58, 58, 58);
+    text-shadow: 1px 3px 10px #58a3ff;
+}
+#active{
+    color: black;
+    box-shadow: 0 2px black
+}
+.ppdb{
+    background-color: #58a3ff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.ppdb a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.hamburger-menu{
+    display: none;
+}
+p{
+    position: relative;
+    font-size: 4rem;
+}
+@media screen and (max-device-width: 480px) 
+    and (orientation: portrait) {
+    .hamburger-menu{
+        display: flex;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+    .list ul,
+    .ppdb{
+        display: none;
+    }
+}
