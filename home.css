@@ -20,12 +20,14 @@ body{
     width: 100%;
     background-color: rgb(245, 245, 245);
 }
-
+.logo h2 {
+    font-size: 1.8rem;
+}
 .navbar-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #4ea5fc;
+    background-color: #5c8dab;
     backdrop-filter: blur(10px);
     padding: 0.5rem 2rem;
     top: 0;
@@ -71,13 +73,13 @@ body{
     -o-transition: color 0.1s linear, text-shadow 0.1s linear;
     transition: color 0.1s linear, text-shadow 0.1s linear;
 }
-
 .list ul li {
     position: relative;
 }
 .list ul li a:hover{
     color: black;
     text-shadow: 1px 3px 5px #ffffff;
+    color: #ffffff;
 }
 .list ul li a::after {
     content: ""; /* Add an empty content for the pseudo-element */
@@ -429,4 +431,50 @@ div.seo-content-footer h2 {
     #section-copyright .dvl {
         margin-left: 0 !important;
     }
+}
+
+.past-events {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.past-events h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.past-events ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.past-events li {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #292;
+}
+
+.past-events li:last-child {
+    border-bottom: none;
+}
+
+.past-events h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.past-events p {
+    font-size: 16px;
+    margin: 0;
+    color: #666;
 }
