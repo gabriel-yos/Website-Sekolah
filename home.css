@@ -21,7 +21,7 @@ body{
     background-color: rgb(245, 245, 245);
 }
 .logo h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 .navbar-container{
     display: flex;
@@ -64,7 +64,7 @@ body{
 }
 .list ul li a{
     font-family: 'DINPro-Light';
-    color: rgb(75, 75, 75);
+    color: rgb(0, 0, 0);
     display: block;
     text-decoration: none;
     transition: ease-in-out 300ms;
@@ -84,14 +84,14 @@ body{
 .list ul li a::after {
     content: ""; /* Add an empty content for the pseudo-element */
     display: block; /* Make the pseudo-element a block-level element */
-    width: 60%; /* Set the width to 100% of the parent link */
+    width: 70%; /* Set the width to 100% of the parent link */
     height: 2px; /* Set the height of the underline */
     background: #ffffff; /* Set the color of the underline */
     position: absolute; /* Position it absolutely within the parent */
     bottom: 0; /* Position it at the bottom of the link */
     left: 0; /* Align it to the left of the link */
     transform: scaleX(0); /* Initially hide the underline */
-    transform-origin: bottom right; /* Animation starts from the right */
+    transform-origin: bottom left; /* Animation starts from the right */
     -webkit-transition: transform 0.1s ease; /* Transition for the scale effect */
     -o-transition: transform 0.1s ease;
     transition: transform 0.1s ease;
