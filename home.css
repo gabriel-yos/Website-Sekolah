@@ -431,6 +431,13 @@ div.seo-content-footer h2 {
     #section-copyright .dvl {
         margin-left: 0 !important;
     }
+    #section-footer .ft-column {
+        margin-bottom: 30px;
+    }
+
+    #section-footer .ft-column.col3 img {
+        float: left;
+    }
 }
 
 .past-events {
